@@ -1,9 +1,8 @@
-<template>
-  <div>test</div>
-</template>
-
+<template></template>
 <script>
 export default {
-  name: 'IndexPage'
-}
+  beforeCreate() {
+    this.$router.push({ path: "/home" });
+  },
+};
 </script>

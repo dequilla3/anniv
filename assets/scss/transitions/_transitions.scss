@@ -1,0 +1,14 @@
+.slide-fade-enter-active {
+  transition: all 0.4s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter {
+  transform: translateX(500px);
+}
+
+.slide-fade-leave-to {
+  transform: translateX(100px);
+}
