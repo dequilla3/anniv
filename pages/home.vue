@@ -1,5 +1,6 @@
 <template>
-  <div class="root__home">
+  <div class="home">
+    <div class="polygon"></div>
     <transition name="slide-fade">
       <div class="ellipse" v-show="showEllipse">
         <div class="ellipse__1"></div>
@@ -12,37 +13,50 @@
       <div class="header">
         <div class="header__text">
           <transition name="slide-fade">
-            <p v-show="showFirstParag">Lorem, ipsum dolor.</p>
+            <p v-show="showFirstParag">Happy 5<sup>th</sup></p>
           </transition>
           <transition name="slide-fade">
-            <p v-show="showSecondParag">Lorem, ipsum.</p>
+            <p v-show="showSecondParag">Anniversary!</p>
           </transition>
         </div>
 
         <div class="header__sub-text">
           <transition name="slide-fade">
             <p v-show="showSecondParag">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-              aspernatur!
+              <sup><font-awesome-icon class="ml-1" icon="fa-solid fa-quote-left" /></sup>
+              I’m so excited about the future because I can’t wait to make all of our
+              dreams come true. Happy anniversary and cheers to many more.
+              <sup><font-awesome-icon class="ml-1" icon="fa-solid fa-quote-right" /></sup>
+              <br />
+              <sub class="ml-2">- Kim Dequilla</sub>
             </p>
           </transition>
         </div>
 
         <transition name="slide-fade">
-          <b-button @click="onNextPage()" class="mt-1" variant="info" v-show="showButton"
-            >GO TO GALLERY <font-awesome-icon class="ml-2" icon="fa-solid fa-arrow-right"
+          <b-button @click="onNextPage()" class="mt-3" variant="info" v-show="showButton"
+            >CLICK HERE<font-awesome-icon class="ml-2" icon="fa-solid fa-arrow-right"
           /></b-button>
         </transition>
       </div>
     </transition>
-    <transition name="slide-fade">
-      <img
-        v-show="showFlowers"
-        class="main-img"
-        src="../assets/img/flowers.png"
-        alt="Flowers"
-      />
+
+    <transition
+      name="custom-classes-transition"
+      enter-active-class="animated tada"
+      leave-active-class="animated bounceOutRight"
+    >
+      <div v-if="showChat" class="chat chat__text">
+        <p>Flowers for you <font-awesome-icon icon="fa-solid fa-heart" /></p>
+      </div>
     </transition>
+
+    <transition name="bounce">
+      <div v-show="showFlowers" class="img-container">
+        <img class="main-img" src="../assets/img/flowers.png" alt="Flowers" />
+      </div>
+    </transition>
+
     <div v-show="showHearts">
       <div class="heart__1"><font-awesome-icon icon="fa-solid fa-heart" /></div>
       <div class="heart__2"><font-awesome-icon icon="fa-solid fa-heart" /></div>
@@ -68,12 +82,22 @@ export default {
       showEllipse: false,
       showFlowers: false,
       showHearts: false,
+      showChat: false,
     };
   },
 
   methods: {
     onNextPage() {
-      this.$router.push({ path: "/gallery" });
+      this.showFirstParag = false;
+      this.showEllipse = false;
+      this.showFlowers = false;
+      this.showSecondParag = false;
+      this.showButton = false;
+      this.showHearts = false;
+      this.showChat = false;
+      setTimeout(() => {
+        this.$router.push({ path: "/gallery" });
+      }, 800);
     },
   },
 
@@ -82,19 +106,23 @@ export default {
       this.showFirstParag = true;
       this.showEllipse = true;
       this.showFlowers = true;
-    }, 1000);
+    }, 1500);
 
     setTimeout(() => {
       this.showSecondParag = true;
-    }, 1050);
+    }, 1550);
 
     setTimeout(() => {
       this.showButton = true;
-    }, 1100);
+    }, 1600);
 
     setTimeout(() => {
       this.showHearts = true;
     }, 2000);
+
+    setTimeout(() => {
+      this.showChat = true;
+    }, 4000);
   },
 };
 </script>
