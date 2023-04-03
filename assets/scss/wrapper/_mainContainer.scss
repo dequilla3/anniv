@@ -63,8 +63,8 @@ body {
 .heart {
   &__1 {
     top: 50%;
-    left: random(100) / 100 * 90%;
-    animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
+    left: calc(random(100) / 100 * 90%);
+    animation: moveHeart calc((random(15) + 5)) + s ease-in-out infinite;
     position: absolute;
     color: red;
     z-index: 0;
@@ -72,8 +72,8 @@ body {
   }
   &__2 {
     top: 50%;
-    left: random(100) / 100 * 90%;
-    animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
+    left: calc(random(100) / 100 * 90%);
+    animation: moveHeart calc((random(15) + 5)) + s ease-in-out infinite;
     position: absolute;
     color: red;
     z-index: 0;
@@ -81,8 +81,8 @@ body {
   }
   &__3 {
     top: 50%;
-    left: random(100) / 100 * 90%;
-    animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
+    left: calc(random(100) / 100 * 90%);
+    animation: moveHeart calc((random(15) + 5)) + s ease-in-out infinite;
     position: absolute;
     color: red;
     z-index: 0;
@@ -90,8 +90,8 @@ body {
   }
   &__4 {
     top: 50%;
-    left: random(100) / 100 * 90%;
-    animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
+    left: calc(random(100) / 100 * 90%);
+    animation: moveHeart calc((random(15) + 5)) + s ease-in-out infinite;
     position: absolute;
     color: red;
     z-index: 0;
@@ -99,7 +99,7 @@ body {
   }
   &__5 {
     top: 60%;
-    left: random(100) / 100 * 90%;
+    left: calc(random(100) / 100 * 90%);
     animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
     position: absolute;
     color: red;
@@ -108,8 +108,8 @@ body {
   }
   &__6 {
     top: 65%;
-    left: random(100) / 100 * 90%;
-    animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
+    left: calc(random(100) / 100 * 90%);
+    animation: moveHeart calc((random(15) + 5)) + s ease-in-out infinite;
     position: absolute;
     color: red;
     z-index: 0;
@@ -117,8 +117,8 @@ body {
   }
   &__7 {
     top: 70%;
-    left: random(100) / 100 * 90%;
-    animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
+    left: calc(random(100) / 100 * 90%);
+    animation: moveHeart calc((random(15) + 5)) + s ease-in-out infinite;
     position: absolute;
     color: red;
     z-index: 0;
@@ -126,8 +126,8 @@ body {
   }
   &__8 {
     top: 69%;
-    left: random(100) / 100 * 90%;
-    animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
+    left: calc(random(100) / 100 * 90%);
+    animation: moveHeartcalc((random(15) + 5)) + s ease-in-out infinite;
     position: absolute;
     color: red;
     z-index: 0;
@@ -135,8 +135,8 @@ body {
   }
   &__9 {
     top: 66%;
-    left: random(100) / 100 * 90%;
-    animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
+    left: calc(random(100) / 100 * 90%);
+    animation: moveHeart calc((random(15) + 5)) + s ease-in-out infinite;
     position: absolute;
     color: red;
     z-index: 0;
@@ -144,8 +144,8 @@ body {
   }
   &__10 {
     top: 67%;
-    left: random(100) / 100 * 90%;
-    animation: moveHeart (random(15) + 5) + s ease-in-out infinite;
+    left: calc(random(100) / 100 * 90%);
+    animation: moveHeart calc(calc((random(15) + 5))) + s ease-in-out infinite;
     position: absolute;
     color: red;
     z-index: 0;
@@ -180,6 +180,8 @@ body {
     text-align: center;
     color: white;
     font-weight: bold;
+    font-size: 30px;
+    text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.46);
   }
 }
 
@@ -226,72 +228,72 @@ body {
   .heart {
     &__1 {
       top: 50%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
     }
     &__2 {
       top: 50%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
     }
     &__3 {
       top: 50%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
     }
     &__4 {
       top: 50%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
     }
     &__5 {
       top: 60%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
       z-index: 0;
     }
     &__6 {
       top: 65%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
     }
     &__7 {
       top: 70%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
     }
     &__8 {
       top: 69%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
     }
     &__9 {
       top: 66%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
     }
     &__10 {
       top: 67%;
-      left: random(100) / 100 * 90%;
-      animation: moveHeart (random(15) + 8) + s ease-in-out infinite;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
       position: absolute;
       color: red;
     }
