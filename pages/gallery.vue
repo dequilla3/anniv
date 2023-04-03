@@ -13,12 +13,7 @@
       <div class="card-container" v-show="showContents">
         <div class="card" v-for="item in contents">
           <div class="card__img-container">
-            <img
-              :show="item.type == 'img'"
-              class="card__img"
-              :src="item.path"
-              alt="Flowers"
-            />
+            <img class="card__img" :src="item.path" alt="Flowers" rel="preload" />
             <div class="heart__1"><font-awesome-icon icon="fa-solid fa-heart" /></div>
             <div class="heart__2"><font-awesome-icon icon="fa-solid fa-heart" /></div>
             <div class="heart__3"><font-awesome-icon icon="fa-solid fa-heart" /></div>
@@ -54,7 +49,7 @@ export default {
       contents: [
         {
           type: "img",
-          path: require("../assets/img/1st_anniv.jpg"),
+          path: require("../assets/img/1st_anv.jpg"),
           title: "1st ANNIVERSARY!",
           desc:
             "This is our very first trip to Sarangani ever na nag motor lang kita. Maski kapoy go lang. One of the best best experience nga upod ka.",

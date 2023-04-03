@@ -53,7 +53,12 @@
 
     <transition name="bounce">
       <div v-show="showFlowers" class="img-container">
-        <img class="main-img" src="../assets/img/flowers.png" alt="Flowers" />
+        <img
+          class="main-img"
+          src="@/assets/img/flowers.png"
+          alt="Flowers"
+          rel="preload"
+        />
       </div>
     </transition>
 
