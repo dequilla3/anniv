@@ -3,7 +3,13 @@
     <transition name="slide-fade">
       <div gallery_header v-show="showTitle">
         <p class="gallery_header__text">
-          Best Memories <font-awesome-icon icon="fa-solid fa-heart" />
+          <font-awesome-icon
+            @click="goHome"
+            class="mr-2 back"
+            icon="fa-solid fa-arrow-left"
+          />
+          Best Memories
+          <font-awesome-icon icon="fa-solid fa-heart" />
         </p>
         <hr />
       </div>
@@ -126,6 +132,18 @@ export default {
       this.showContents = true;
       this.showTitle = true;
     }, 1);
+  },
+
+  methods: {
+    goHome() {
+      setTimeout(() => {
+        this.showContents = false;
+        this.showTitle = false;
+      }, 500);
+      setTimeout(() => {
+        this.$router.push({ path: "/home" });
+      }, 1000);
+    },
   },
 };
 </script>

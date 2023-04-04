@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <div class="polygon"></div>
+    <transition name="slide-fade">
+      <div v-show="showPolygon" class="polygon" />
+    </transition>
     <transition name="slide-fade">
       <div class="ellipse" v-show="showEllipse">
         <div class="ellipse__1"></div>
@@ -34,7 +36,7 @@
         </div>
 
         <transition name="slide-fade">
-          <b-button @click="onNextPage()" class="mt-3" variant="info" v-show="showButton"
+          <b-button @click="onNextPage()" class="mt-2" variant="info" v-show="showButton"
             >CLICK HERE<font-awesome-icon class="ml-2" icon="fa-solid fa-arrow-right"
           /></b-button>
         </transition>
@@ -88,6 +90,7 @@ export default {
       showFlowers: false,
       showHearts: false,
       showChat: false,
+      showPolygon: false,
     };
   },
 
@@ -100,9 +103,10 @@ export default {
       this.showButton = false;
       this.showHearts = false;
       this.showChat = false;
-      setTimeout(() => {
-        this.$router.push({ path: "/gallery" });
-      }, 800);
+      (this.showPolygon = false),
+        setTimeout(() => {
+          this.$router.push({ path: "/gallery" });
+        }, 800);
     },
   },
 
@@ -115,6 +119,7 @@ export default {
 
     setTimeout(() => {
       this.showSecondParag = true;
+      this.showPolygon = true;
     }, 1550);
 
     setTimeout(() => {
