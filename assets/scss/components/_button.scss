@@ -2,11 +2,13 @@ button {
   padding-left: 40px !important;
   padding-right: 40px !important;
   border-radius: 15px !important;
+  border: 0 !important;
   font-size: 13px !important;
   font-weight: bold;
   box-shadow: 10px 10px 27px -8px rgba(0, 0, 0, 0.28);
   -webkit-box-shadow: 10px 10px 27px -8px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 10px 10px 27px -8px rgba(0, 0, 0, 0.28);
+  background: #d16ba5 !important;
 }
 
 @media (max-width: 780px) {

@@ -1,0 +1,53 @@
+@import "var";
+
+@media (max-width: 380px) {
+  .chat {
+    top: 50%;
+    left: 60%;
+
+    &__text {
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+  }
+
+  .ellipse {
+    /* Group */
+    position: absolute;
+    width: 100px;
+    height: 100;
+    left: 40px;
+    top: 50%;
+
+    &__1 {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 5px;
+      top: 25px;
+      background: $ellipseBg;
+      border-radius: $borderRadius;
+    }
+
+    &__2 {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 30px;
+      top: 65px;
+      background: $ellipseBg;
+      border-radius: $borderRadius;
+    }
+
+    &__3 {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      left: 50px;
+      top: 90px;
+      background: $ellipseBg;
+      border-radius: $borderRadius;
+    }
+  }
+}

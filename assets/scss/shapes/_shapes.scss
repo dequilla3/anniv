@@ -1,4 +1,4 @@
-$borderRadius: 50%;
+@import "var";
 
 .ellipse {
   /* Group */
@@ -15,7 +15,7 @@ $borderRadius: 50%;
     height: 200px;
     left: 30px;
     top: 30px;
-    background: #e9c25d;
+    background: $ellipseBg;
     opacity: 0.3;
     border-radius: $borderRadius;
   }
@@ -27,7 +27,7 @@ $borderRadius: 50%;
     height: 150px;
     left: 130px;
     top: 250px;
-    background: #e9c25d;
+    background: $ellipseBg;
     opacity: 0.3;
     border-radius: $borderRadius;
   }
@@ -39,7 +39,7 @@ $borderRadius: 50%;
     height: 100px;
     left: 220px;
     top: 430px;
-    background: #e9c25d;
+    background: $ellipseBg;
     opacity: 0.3;
     border-radius: $borderRadius;
   }
@@ -48,12 +48,12 @@ $borderRadius: 50%;
 .chat {
   position: absolute;
   background-color: #ff85a2;
-  width: 110px;
-  height: 50px;
+  width: 75px;
+  height: 30px;
   justify-content: center;
-  top: 18%;
-  left: 35%;
-  opacity: 0.8;
+  top: 20%;
+  left: 40%;
+  opacity: 0.6;
   z-index: 1;
 
   box-shadow: 10px 10px 27px -8px rgba(0, 0, 0, 0.28);
@@ -80,11 +80,11 @@ $borderRadius: 50%;
   );
 
   &__text {
-    font-size: 9px;
+    font-size: 7px;
     text-align: center;
     color: white;
-    padding: 10px;
     font-weight: bold;
+    padding-top: 5px;
   }
 }
 
@@ -94,75 +94,6 @@ $borderRadius: 50%;
   }
   to {
     transform: translateX(10px);
-  }
-}
-
-@media (max-width: 780px) {
-  .ellipse {
-    /* Group */
-    position: absolute;
-    width: 100px;
-    height: 100;
-    left: 30px;
-    top: 45%;
-
-    &__1 {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      left: 5px;
-      top: 20px;
-      background: #e9c25d;
-      // opacity: 0.3;
-      border-radius: $borderRadius;
-    }
-
-    &__2 {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      left: 30px;
-      top: 70px;
-      background: #e9c25d;
-      // opacity: 0.3;
-      border-radius: $borderRadius;
-    }
-
-    &__3 {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      left: 50px;
-      top: 100px;
-      background: #e9c25d;
-      // opacity: 0.3;
-      border-radius: $borderRadius;
-    }
-  }
-
-  .chat {
-    width: 100px;
-    height: 50px;
-    top: 45%;
-    left: 65%;
-    // opacity: 0.8;
-
-    &__text {
-      font-size: 9px;
-      text-align: center;
-      color: white;
-      padding: 10px;
-      font-weight: bold;
-    }
-  }
-
-  @keyframes moveEllipse {
-    from {
-      transform: translateX(-3px);
-    }
-    to {
-      transform: translateX(3px);
-    }
   }
 }
 
@@ -177,64 +108,4 @@ $borderRadius: 50%;
   background: #1e1136;
   opacity: 0.1;
   z-index: 0;
-}
-
-@media (max-width: 380px) {
-  .chat {
-    width: 100px;
-    height: 50px;
-    top: 50%;
-    left: 60%;
-    // opacity: 0.8;
-
-    &__text {
-      font-size: 9px;
-      text-align: center;
-      color: white;
-      padding: 10px;
-      font-weight: bold;
-    }
-  }
-
-  .ellipse {
-    /* Group */
-    position: absolute;
-    width: 100px;
-    height: 100;
-    left: 40px;
-    top: 50%;
-
-    &__1 {
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      left: 5px;
-      top: 25px;
-      background: #e9c25d;
-      // opacity: 0.3;
-      border-radius: $borderRadius;
-    }
-
-    &__2 {
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      left: 30px;
-      top: 65px;
-      background: #e9c25d;
-      // opacity: 0.3;
-      border-radius: $borderRadius;
-    }
-
-    &__3 {
-      position: absolute;
-      width: 15px;
-      height: 15px;
-      left: 50px;
-      top: 90px;
-      background: #e9c25d;
-      // opacity: 0.3;
-      border-radius: $borderRadius;
-    }
-  }
 }

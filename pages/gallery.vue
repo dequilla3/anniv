@@ -17,9 +17,14 @@
 
     <transition name="slide-fade">
       <div class="card-container" v-show="showContents">
-        <div class="card" v-for="item in contents">
-          <div class="card__img-container">
-            <img class="card__img" :src="item.path" alt="Flowers" rel="preload" />
+        <div class="card card__border card__shadow" v-for="item in contents">
+          <div class="card__img-container card__border">
+            <img
+              class="card__img card__border"
+              :src="item.path"
+              alt="Flowers"
+              rel="preload"
+            />
             <div class="heart__1"><font-awesome-icon icon="fa-solid fa-heart" /></div>
             <div class="heart__2"><font-awesome-icon icon="fa-solid fa-heart" /></div>
             <div class="heart__3"><font-awesome-icon icon="fa-solid fa-heart" /></div>

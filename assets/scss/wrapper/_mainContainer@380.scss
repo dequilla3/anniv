@@ -1,0 +1,10 @@
+@media (max-width: 380px) {
+  .main-img {
+    position: absolute;
+    top: 70%;
+    left: 20px;
+    height: 250px;
+    width: 250px;
+    animation: moveFlower 1s ease-in-out infinite alternate;
+  }
+}

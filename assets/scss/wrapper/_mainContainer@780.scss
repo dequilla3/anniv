@@ -1,0 +1,137 @@
+@import "var";
+/*
+* Mobile View
+*/
+@media (max-width: 780px) {
+  .header {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    top: 10%;
+    left: 50px;
+
+    &__text {
+      text-align: left;
+      font-size: 28px;
+      font-weight: bold;
+      color: rgb(251, 251, 251);
+    }
+    &__sub-text {
+      text-align: left;
+      font-size: 13px;
+      color: rgb(255, 255, 255);
+      opacity: 0.9;
+    }
+  }
+
+  .img-container {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background: black;
+    height: 100px;
+  }
+  .main-img {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    height: 300px;
+    width: 300px;
+    animation: moveFlower 1s ease-in-out infinite alternate;
+  }
+  .heart {
+    &__1 {
+      top: 50%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+    }
+    &__2 {
+      top: 50%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+    }
+    &__3 {
+      top: 50%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+    }
+    &__4 {
+      top: 50%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+    }
+    &__5 {
+      top: 60%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+      z-index: 0;
+    }
+    &__6 {
+      top: 65%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+    }
+    &__7 {
+      top: 70%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+    }
+    &__8 {
+      top: 69%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+    }
+    &__9 {
+      top: 66%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+    }
+    &__10 {
+      top: 67%;
+      left: calc(random(100) / 100 * 90%);
+      animation: moveHeart calc((random(15) + 8)) + s ease-in-out infinite;
+      position: absolute;
+      color: $heartColor;
+    }
+  }
+  @keyframes moveHeart {
+    from {
+      transform: translateY(-20px);
+      transform: rotate(20deg);
+      top: 0;
+      font-size: 12px;
+    }
+    to {
+      transform: translateY(20px);
+      transform: rotate(-20deg);
+      font-size: 30px;
+    }
+  }
+
+  @keyframes moveFlower {
+    from {
+      transform: rotate(-1deg);
+    }
+    to {
+      transform: rotate(1deg);
+    }
+  }
+}
