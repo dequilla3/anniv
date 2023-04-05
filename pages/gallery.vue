@@ -2,7 +2,7 @@
   <div>
     <font-awesome-icon
       @click="goHome"
-      class="mt-3 ml-3 back"
+      class="mt-3 ml-3 back position-fixed"
       icon="fa-solid fa-arrow-left"
     />
     <transition name="slide-fade">
