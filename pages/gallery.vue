@@ -1,13 +1,13 @@
 <template>
   <div>
+    <font-awesome-icon
+      @click="goHome"
+      class="mt-3 ml-3 back"
+      icon="fa-solid fa-arrow-left"
+    />
     <transition name="slide-fade">
       <div gallery_header v-show="showTitle">
         <p class="gallery_header__text">
-          <font-awesome-icon
-            @click="goHome"
-            class="mr-2 back"
-            icon="fa-solid fa-arrow-left"
-          />
           Best Memories
           <font-awesome-icon icon="fa-solid fa-heart" />
         </p>
@@ -70,7 +70,7 @@ export default {
           path: require("../assets/img/lake_agco.jpg"),
           title: "ONE OF THE MOST UNFORGETTABLE MOMENTS",
           desc:
-            "This is my first time na makakadto sa Kidapawan Haha! One of the most unforgettable kay gin motor lang naton then upod pa ang pamilya mo. Reunion ni sang faimily mo. I'm so grateful kay grabe ko ka open sa pamilya mo. Thankyou so much! Iloveyou <3",
+            "This is my first time na makakadto sa Kidapawan Haha! One of the most unforgettable kay gin motor lang naton then upod pa ang pamilya mo. Reunion ni sang family mo. I'm so grateful kay grabe ko ka open sa pamilya mo. Thankyou so much! Iloveyou <3",
         },
         {
           type: "img",

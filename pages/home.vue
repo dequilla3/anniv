@@ -36,7 +36,7 @@
         </div>
 
         <transition name="slide-fade">
-          <b-button @click="onNextPage()" class="mt-2" variant="info" v-show="showButton"
+          <b-button @click="onNextPage()" variant="info" v-show="showButton"
             >CLICK HERE<font-awesome-icon class="ml-2" icon="fa-solid fa-arrow-right"
           /></b-button>
         </transition>

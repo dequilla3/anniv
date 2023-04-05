@@ -1,4 +1,4 @@
-@import "var";
+@import "/assets/scss/vars/var";
 
 @media (max-width: 780px) {
   .ellipse {
@@ -58,5 +58,9 @@
     to {
       transform: translateX(3px);
     }
+  }
+
+  .polygon {
+    clip-path: polygon(0 0, 100% 0%, 100% 55%, 0 64%);
   }
 }

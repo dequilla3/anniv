@@ -1,8 +1,7 @@
 html,
 body {
   height: 100%;
-  background-image: $bg;
   background-attachment: fixed;
   transition: 0.5s ease-in-out;
-  scroll-behavior: smooth;
+  background: whitesmoke
 }

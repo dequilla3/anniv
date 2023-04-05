@@ -1,4 +1,4 @@
-@import "var";
+@import "/assets/scss/vars/var";
 
 .ellipse {
   /* Group */
@@ -16,7 +16,6 @@
     left: 30px;
     top: 30px;
     background: $ellipseBg;
-    opacity: 0.3;
     border-radius: $borderRadius;
   }
 
@@ -28,7 +27,6 @@
     left: 130px;
     top: 250px;
     background: $ellipseBg;
-    opacity: 0.3;
     border-radius: $borderRadius;
   }
 
@@ -40,7 +38,6 @@
     left: 220px;
     top: 430px;
     background: $ellipseBg;
-    opacity: 0.3;
     border-radius: $borderRadius;
   }
 }
@@ -53,7 +50,6 @@
   justify-content: center;
   top: 17%;
   left: 35%;
-  opacity: 0.6;
   z-index: 1;
 
   box-shadow: 10px 10px 27px -8px rgba(0, 0, 0, 0.28);
@@ -98,14 +94,10 @@
 }
 
 .polygon {
-  -webkit-clip-path: polygon(0 0, 64% 0, 0 100%, 0% 100%);
-  clip-path: polygon(0 0, 64% 0, 0 100%, 0% 100%);
-
+  clip-path: polygon(0 0, 100% 0%, 100% 56%, 0 69%);
+  background: $skyBlue;
   position: absolute;
   width: 100%;
   height: 100%;
-
-  background: #1e1136;
-  opacity: 0.1;
   z-index: 0;
 }

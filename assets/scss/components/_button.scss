@@ -22,9 +22,9 @@ button {
 }
 
 .back {
-  font-size: 24px;
+  font-size: 26px;
+  color: $skyBlue;
   &:active {
-    color: whitesmoke;
-    font-size: 20px;
+    font-size: 25px;
   }
 }

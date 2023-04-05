@@ -1,4 +1,4 @@
-@import "var";
+@import "/assets/scss/vars/var";
 /*
 * Mobile View
 */
@@ -12,7 +12,7 @@
 
     &__text {
       text-align: left;
-      font-size: 28px;
+      font-size: 32px;
       font-weight: bold;
       color: rgb(251, 251, 251);
     }
@@ -20,7 +20,7 @@
       text-align: left;
       font-size: 13px;
       color: rgb(255, 255, 255);
-      opacity: 0.9;
+      opacity: 0.8;
     }
   }
 
@@ -117,12 +117,10 @@
       transform: translateY(-20px);
       transform: rotate(20deg);
       top: 0;
-      font-size: 12px;
     }
     to {
       transform: translateY(20px);
       transform: rotate(-20deg);
-      font-size: 30px;
     }
   }
 

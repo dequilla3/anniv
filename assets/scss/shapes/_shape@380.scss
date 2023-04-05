@@ -1,4 +1,4 @@
-@import "var";
+@import "/assets/scss/vars/var";
 
 @media (max-width: 380px) {
   .chat {
@@ -49,5 +49,9 @@
       background: $ellipseBg;
       border-radius: $borderRadius;
     }
+  }
+
+  .polygon {
+    clip-path: polygon(0 0, 100% 0%, 100% 56%, 0 70%);
   }
 }
