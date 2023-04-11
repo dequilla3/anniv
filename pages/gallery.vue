@@ -63,7 +63,7 @@ export default {
           path: require("../assets/img/1st_anv.jpg"),
           title: "1st ANNIVERSARY!",
           desc:
-            "This is our very first trip to Sarangani ever na nag motor lang kita. Maski kapoy go lang. One of the best best experience nga upod ka.",
+            "This is our first trip to Sarangani ever na nag motor lang kita. Maski kapoy go lang. One of the best experience nga upod ka.",
         },
         {
           type: "img",
@@ -84,7 +84,7 @@ export default {
           path: require("../assets/img/1st_bday_handa.jpg"),
           title: "1st BIRTHDAY CELEBRATION",
           desc:
-            "This is my very first birthday celebration nga gin ganap sa balay. Thankyou sa pag surprise kag pag prepare sang pagkaon sini na time. Usually mag birthday ko gakaon lang kami sa gawas or gina kwarta ko lang. Hahaha! Thankyou so much. Hindi ko ni malimtan <3",
+            "This is my first birthday celebration nga gin ganap sa balay nga damo bisita. Thankyou sa pag surprise kag pag prepare sang pagkaon sini na time. Usually mag birthday ko gakaon lang kami sa gawas or gina kwarta ko lang. Hahaha! Thankyou so much. Hindi ko ni malimtan <3",
         },
         {
           type: "img",
@@ -98,7 +98,7 @@ export default {
           path: require("../assets/img/3rd_anniv.jpg"),
           title: "2nd RAMEN HAHA",
           desc:
-            "Our 2nd Ramen! HAHAHA Hindi ko lang sure kung authentic ramen ni sya pero the best ramen ni sya nga natilawan ko. Btw sa Ichiban ta sini nag kaon then 3rd anniversary ta sini na time <3 Best moments as always basta upod ka. ILVOEYOUUUU <3",
+            "Our 2nd Ramen! HAHAHA Hindi ko lang sure kung authentic ramen ni sya pero the best ramen ni sya nga natilawan ko. Btw sa Ichiban ta sini nag kaon then 3rd anniversary ta sini na time <3 Best moments as always basta upod ka. ILOVEYOUUUU <3",
         },
         {
           type: "img",
