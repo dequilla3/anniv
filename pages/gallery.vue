@@ -6,9 +6,9 @@
       icon="fa-solid fa-arrow-left"
     />
     <transition name="slide-fade">
-      <div gallery_header v-show="showTitle">
+      <div class="gallery_header" v-show="showTitle">
         <p class="gallery_header__text">
-          Best Memories
+          Memories
           <font-awesome-icon icon="fa-solid fa-heart" />
         </p>
         <hr />
