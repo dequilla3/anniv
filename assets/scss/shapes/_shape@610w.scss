@@ -1,0 +1,27 @@
+@media (max-height: 610px) {
+  .chat {
+    top: 53%;
+    left: 63%;
+  }
+
+  .ellipse {
+    left: 40px;
+    top: 55%;
+
+    &__1 {
+      left: 5px;
+      top: 28px;
+    }
+
+    &__2 {
+      height: 25px;
+      left: 30px;
+      top: 70px;
+    }
+
+    &__3 {
+      left: 50px;
+      top: 95px;
+    }
+  }
+}
